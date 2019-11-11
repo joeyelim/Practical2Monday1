@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             }
             diceImage.setImageResource(drawableResource)
 
-            val randomInt1 = Random().nextInt(6)+2
+            val randomInt1 = Random().nextInt(6)+1
             val drawableResource1 = when (randomInt) {
                 1 -> R.drawable.dice_1
                 2 -> R.drawable.dice_2
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             }
             diceImage.setImageResource(drawableResource1)
 
-            val randomInt2 = Random().nextInt(6)+3
+            val randomInt2 = Random().nextInt(6)+1
             resultText2.text = randomInt2.toString()
 
         }
